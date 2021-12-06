@@ -6,4 +6,5 @@ group :development, :test do
   gem 'rspec'
   gem 'rubocop'
   gem 'simplecov'
+  gem 'steep'
 end
