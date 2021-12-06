@@ -1,0 +1,9 @@
+Invalid value entered (integer or floating point) 
+Incorrect scale has been entered ("K", "F", "C") 
+The entered scales are the same 
+Enter value: 
+Enter a temperature measuring system ("K", "F", "C") 
+Enter the measuring system you want to convert
+Continue calculations?  (Y/N)
+Result = 10
+Coverage report generated for RSpec to /home/ilya/ruby-temperatura/coverage. 54 / 60 LOC (90.0%) covered.
