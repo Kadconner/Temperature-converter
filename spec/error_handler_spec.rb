@@ -6,7 +6,7 @@ RSpec.describe ErrorHanlder do
       subject { ErrorHanlder.new.check_value(5.5) }
       it { is_expected.to eq true }
     end
-    
+
     context 'Correct value' do
       subject { ErrorHanlder.new.check_value(-5.5) }
       it { is_expected.to eq true }
@@ -16,7 +16,7 @@ RSpec.describe ErrorHanlder do
       subject { ErrorHanlder.new.check_value('test') }
       it { is_expected.to eq false }
     end
-    
+
     context 'incorrect value' do
       subject { ErrorHanlder.new.check_value('86test') }
       it { is_expected.to eq false }
