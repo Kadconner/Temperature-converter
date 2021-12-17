@@ -1,3 +1,4 @@
-require './src/application'
+# frozen_string_literal: true
 
-Application.new.run
+require_relative './src/program'
+Program.new.execute
