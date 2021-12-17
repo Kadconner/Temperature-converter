@@ -1,9 +1,6 @@
 AllCops:
   NewCops: enable
 
-Style/AndOr:
-  Enabled: false
-  
 Style/Documentation:
   Enabled: false
 
@@ -11,8 +8,8 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Metrics/MethodLength:
-  Max: 30
+  Max: 20
 
 Metrics/BlockLength:
   Exclude:
-    - "spec/**/*_spec.rb"
+    - 'spec/**/*_spec.rb'
