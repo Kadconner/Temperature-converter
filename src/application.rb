@@ -1,18 +1,15 @@
-require './src/io_interface'
-require './src/temperature'
+# frozen_string_literal: true
 
-class Application
-  def run
-    io_inteface = IOInterface.new
+require_relative './states/read_first_scale'
+require_relative './states/storage'
 
+class Program
+  def execute
+    puts "To exit program enter 'e'"
+    @state = States::ReadFirstScale.new
     loop do
-      source_scale = io_inteface.input_source_scale
-      target_scale = io_inteface.input_target_scale(source_scale)
-      value = io_inteface.input_value
-
-      temperature = Temperature.new(source_scale, target_scale, value).converter
-      io_inteface.output_result(temperature)
-      io_inteface.check_exit
+      @state.execute
+      @state = @state.next
     end
   end
 end
