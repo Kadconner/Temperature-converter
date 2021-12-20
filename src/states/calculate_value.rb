@@ -5,7 +5,7 @@ require_relative './read_first_scale'
 require_relative './../io_adapter'
 
 FORMULAS = [
-  { first: 'C', second: 'F', func: ->(value) { value * 1.8 + 32 } },
+  { first: 'C', second: 'F', func: ->(value) { (value * 1.8) + 32 } },
   { first: 'F', second: 'C', func: ->(value) { (value - 32) / 1.8 } },
   { first: 'C', second: 'K', func: ->(value) { value + 273.15  } },
   { first: 'K', second: 'C', func: ->(value) { value - 273.15  } },
